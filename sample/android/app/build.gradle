@@ -149,8 +149,6 @@ dependencies {
     api "com.google.android.gms:play-services-location:${rootProject.ext.googlePlayServicesVersion}"
     api "com.google.firebase:firebase-core:${rootProject.ext.googlePlayServicesVersion}"
     api "com.google.firebase:firebase-messaging:${rootProject.ext.googlePlayServicesVersion}"
-    api 'com.inlocomedia.android:android-sdk-engagement:4.0.+'
-    api 'com.inlocomedia.android:android-sdk-location:4.0.+'
 }
 
 // Run this once to be able to run the application with BUCK
