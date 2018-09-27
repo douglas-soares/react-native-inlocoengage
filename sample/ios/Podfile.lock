@@ -10,10 +10,10 @@ PODS:
   - FirebaseAnalytics (4.1.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
   - FirebaseCore (4.0.18):
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
   - FirebaseInstanceID (2.0.10):
     - FirebaseCore (~> 4.0)
   - FirebaseMessaging (2.1.1):
@@ -30,7 +30,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.4)
   - GoogleToolboxForMac/Logger (2.1.4):
     - GoogleToolboxForMac/Defines (= 2.1.4)
-  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+  - GoogleToolboxForMac/NSData+zlib (2.1.4):
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - InLocoEngage-iOS-SDK (4.1.0):
     - InLocoEngage-iOS-SDK/Engage (= 4.1.0)
@@ -101,33 +101,19 @@ DEPENDENCIES:
   - ReactNativePermissions (from `../node_modules/react-native-permissions`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - boost-for-react-native
-    - Firebase
-    - FirebaseAnalytics
-    - FirebaseCore
-    - FirebaseInstanceID
-    - FirebaseMessaging
-    - GoogleToolboxForMac
-    - InLocoEngage-iOS-SDK
-    - InLocoMedia-iOS-SDK
-    - nanopb
-    - Protobuf
-
 EXTERNAL SOURCES:
   DoubleConversion:
-    :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+    :podspec: ../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec
   Folly:
-    :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
+    :podspec: ../node_modules/react-native/third-party-podspecs/Folly.podspec
   glog:
-    :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
+    :podspec: ../node_modules/react-native/third-party-podspecs/glog.podspec
   React:
-    :path: "../node_modules/react-native"
+    :path: ../node_modules/react-native
   ReactNativePermissions:
-    :path: "../node_modules/react-native-permissions"
+    :path: ../node_modules/react-native-permissions
   yoga:
-    :path: "../node_modules/react-native/ReactCommon/yoga"
+    :path: ../node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
@@ -144,10 +130,10 @@ SPEC CHECKSUMS:
   InLocoMedia-iOS-SDK: 1ab2d214bcfde2ce271870e1c4b98e1f8be6344c
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
-  React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
-  ReactNativePermissions: 9f2d9c45c98800795e6c2ed330e25d11a66a8169
-  yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
+  React: bdb39c05e2eed10a43056cff89a68bc9ebe7f232
+  ReactNativePermissions: 2e324bb3baf12702e3ec27f76c8ae1158fa69fc6
+  yoga: 2418c171de153cbe3c94dc28c3bf691b1695ae17
 
 PODFILE CHECKSUM: 097fc16fe91b26c3966a14c5a5c64cd8c523037d
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.3.1

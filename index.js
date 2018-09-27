@@ -57,6 +57,38 @@ const presentNotification = (message, notificationId, channelId) => {
 	}
 }
 
+const onNotificationReceived = (notification) => {
+	if(Platform.OS == 'ios' && notification != null && 'in_loco_data' in notification.data) {
+		RNInLocoEngage.didReceiveRemoteNotification(notification.data);
+	}
+}
+
+const onNotificationPresented = (notification) => {
+	if(Platform.OS == 'ios' && notification != null && 'in_loco_data' in notification.data) {
+		RNInLocoEngage.didPresentNotification(notification.data);
+	}
+}
+
+const onNotificationClicked = (notification) => {
+	if(Platform.OS == 'ios' && notification != null && 'in_loco_data' in notification.data) {
+		RNInLocoEngage.didReceiveNotificationResponse(notification.data);
+	}
+}
+
+const onAppLaunchedWithNotification = (notification) => {
+	if(Platform.OS == 'ios' && notification != null && 'in_loco_data' in notification.data) {
+		RNInLocoEngage.didFinishLaunchingWithMessage(notification.data);
+	}
+}
+
+const getUrl = (notification) => {
+	if(Platform.OS == 'ios' && notification != null && 'in_loco_data' in notification.data) {
+		const inLocoData = JSON.parse(notification.data['in_loco_data']);
+		return inLocoData.actions.main_action[0];
+	}
+	return null;
+}
+
 export default {
 	init: init,
 	setUser: setUser,
@@ -66,5 +98,10 @@ export default {
 	setFirebasePushProvider: setFirebasePushProvider,
 	setPushNotificationsEnabled: setPushNotificationsEnabled,
 	isInLocoEngageMessage: isInLocoEngageMessage,
-	presentNotification: presentNotification
+	presentNotification: presentNotification,
+	onNotificationReceived: onNotificationReceived,
+	onNotificationPresented: onNotificationPresented,
+	onNotificationClicked: onNotificationClicked,
+	onAppLaunchedWithNotification: onAppLaunchedWithNotification,
+	getUrl: getUrl
 };

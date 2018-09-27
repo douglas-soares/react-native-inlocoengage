@@ -45,4 +45,29 @@ RCT_EXPORT_METHOD(trackEvent:(NSString *)name properties:(NSDictionary *)propert
 {
     [ILMInLocoEngage trackEvent:name properties:properties];
 }
+
+RCT_EXPORT_METHOD(didReceiveRemoteNotification:(NSDictionary *)userInfo)
+{
+    ILMPushMessage *message = [[ILMPushMessage alloc] initWithDictionary:userInfo];
+    [ILMInLocoEngage appDidReceiveRemoteNotification:message];
+}
+
+RCT_EXPORT_METHOD(didPresentNotification:(NSDictionary *)userInfo)
+{
+    ILMPushMessage *message = [[ILMPushMessage alloc] initWithDictionary:userInfo];
+    [ILMInLocoEngage willPresentNotification:message notificationOptions:UNNotificationPresentationOptionAlert];
+}
+
+RCT_EXPORT_METHOD(didReceiveNotificationResponse:(NSDictionary *)userInfo)
+{
+    ILMPushMessage *message = [[ILMPushMessage alloc] initWithDictionary:userInfo];
+    [ILMInLocoEngage didReceiveNotificationResponse:message];
+}
+
+RCT_EXPORT_METHOD(didFinishLaunchingWithMessage:(NSDictionary *)userInfo)
+{
+    ILMPushMessage *message = [[ILMPushMessage alloc] initWithDictionary:userInfo];
+    [ILMInLocoEngage appDidFinishLaunchingWithMessage:message];
+}
+
 @end

@@ -40,8 +40,8 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		EB20AE9B2157219E00EDB325 /* libReactNativePermissions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD17634210CE65E00E12DA0 /* libReactNativePermissions.a */; };
 		EB5072A921080B2B006590C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB5072A821080B2A006590C8 /* GoogleService-Info.plist */; };
-		EBD17637210CE6D400E12DA0 /* libReactNativePermissions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD17634210CE65E00E12DA0 /* libReactNativePermissions.a */; };
 		FA45D09B92503E778652F69A /* libPods-RNInLocoEngageSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B56D2D3299A5B7138B8161 /* libPods-RNInLocoEngageSample.a */; };
 /* End PBXBuildFile section */
 
@@ -375,6 +375,7 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		D0B56D2D3299A5B7138B8161 /* libPods-RNInLocoEngageSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNInLocoEngageSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB20AE982157218200EDB325 /* libReactNativePermissions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReactNativePermissions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5072A721080AC1006590C8 /* RNInLocoEngageSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = RNInLocoEngageSample.entitlements; path = RNInLocoEngageSample/RNInLocoEngageSample.entitlements; sourceTree = "<group>"; };
 		EB5072A821080B2A006590C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "RNInLocoEngageSample/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBD1760A210CE65E00E12DA0 /* ReactNativePermissions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativePermissions.xcodeproj; path = "../node_modules/react-native-permissions/ios/ReactNativePermissions.xcodeproj"; sourceTree = "<group>"; };
@@ -394,7 +395,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD17637210CE6D400E12DA0 /* libReactNativePermissions.a in Frameworks */,
+				EB20AE9B2157219E00EDB325 /* libReactNativePermissions.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -561,6 +562,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB20AE982157218200EDB325 /* libReactNativePermissions.a */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 				D0B56D2D3299A5B7138B8161 /* libPods-RNInLocoEngageSample.a */,
 			);
@@ -724,6 +726,8 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				02A158806BA131FDD2384225 /* [CP] Embed Pods Frameworks */,
+				E3F306652DF016226DB442F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -785,6 +789,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = L2X4CZJ2U2;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1221,6 +1226,21 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		02A158806BA131FDD2384225 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNInLocoEngageSample/Pods-RNInLocoEngageSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1251,6 +1271,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3F306652DF016226DB442F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNInLocoEngageSample/Pods-RNInLocoEngageSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1381,6 +1416,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RNInLocoEngageSample/RNInLocoEngageSample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = L2X4CZJ2U2;
@@ -1398,6 +1435,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inlocomedia.RNInLocoEngageSample;
 				PRODUCT_NAME = RNInLocoEngageSample;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1408,6 +1446,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RNInLocoEngageSample/RNInLocoEngageSample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L2X4CZJ2U2;
 				HEADER_SEARCH_PATHS = (
@@ -1424,6 +1464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inlocomedia.RNInLocoEngageSample;
 				PRODUCT_NAME = RNInLocoEngageSample;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
