@@ -7,8 +7,8 @@ target 'RNInLocoEngageSample' do
 
   # Pods for RNInLocoEngageSample
 
-  pod 'InLocoEngage-iOS-SDK', '~> 4.1.0'
-  pod 'InLocoMedia-iOS-SDK/Location', '~> 4.1.0'
+  pod 'InLocoEngage-iOS-SDK', '~> 4.3.0'
+  pod 'InLocoMedia-iOS-SDK/Location', '~> 4.3.0'
   pod 'Firebase/Core', '~> 4.11.0'
   pod 'Firebase/Messaging', '~> 4.11.0'
   

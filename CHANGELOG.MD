@@ -1,3 +1,7 @@
+Release 2.0.0
+===
+- Update In Loco Engage SDK to 4.3
+
 Release 1.2.0
 ===
 - Adds metrics tracking on iOS

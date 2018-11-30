@@ -200,7 +200,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../../../ios",
 					"$(PROJECT_DIR)/../../../ios/Pods/InLocoEngage-iOS-SDK/InLocoMediaSDK",
-					"$(PROJECT_DIR)/../sample/ios/Pods/InLocoEngage-iOS-SDK/InLocoMediaSDK",
+					"\"$(PROJECT_DIR)/../../example/ios/Pods/InLocoEngage-iOS-SDK/InLocoMediaSDK\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -222,7 +222,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../../../ios",
 					"$(PROJECT_DIR)/../../../ios/Pods/InLocoEngage-iOS-SDK/InLocoMediaSDK",
-					"$(PROJECT_DIR)/../sample/ios/Pods/InLocoEngage-iOS-SDK/InLocoMediaSDK",
+					"\"$(PROJECT_DIR)/../../example/ios/Pods/InLocoEngage-iOS-SDK/InLocoMediaSDK\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
