@@ -1,3 +1,7 @@
+Release 3.0.1
+===
+- Change package name
+
 Release 2.0.0
 ===
 - Update In Loco Engage SDK to 4.3

@@ -1,4 +1,4 @@
-package com.inlocomedia.reactnative;
+package com.inlocomedia.reactnative.engage;
 
 import android.Manifest;
 import android.content.Context;

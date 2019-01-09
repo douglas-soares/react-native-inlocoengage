@@ -3,7 +3,7 @@ package com.rninlocoengagesample;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.inlocomedia.reactnative.RNInLocoEngagePackage;
+import com.inlocomedia.reactnative.engage.RNInLocoEngagePackage;
 import io.invertase.firebase.RNFirebasePackage;
 import io.invertase.firebase.messaging.RNFirebaseMessagingPackage;
 
