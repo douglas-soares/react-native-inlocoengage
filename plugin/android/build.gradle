@@ -42,8 +42,8 @@ def supportVersion = rootProject.hasProperty('supportLibVersion') ? rootProject.
 dependencies {
     compile "com.facebook.react:react-native:+"
     compile "com.android.support:support-v4:$supportVersion"
-    compile "com.inlocomedia.android:android-sdk-engagement:4.3.+"
-    compile "com.inlocomedia.android:android-sdk-location:4.3.+"
+    compile "com.inlocomedia.android:android-sdk-engagement:4.5.3"
+    compile "com.inlocomedia.android:android-sdk-location:4.5.3"
     compile "com.google.android.gms:play-services-ads:$googlePlayServicesVersion"
     compile "com.google.android.gms:play-services-location:$googlePlayServicesVersion"
 }

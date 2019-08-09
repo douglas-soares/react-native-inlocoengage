@@ -89,6 +89,20 @@ const getUrl = (notification) => {
 	return null;
 }
 
+const setUserAddress = (address) => {
+	if("subThoroughfare" in address) {
+		address.subThoroughfare = String(address.subThoroughfare);
+	}
+	if(Platform.OS == 'ios' && "locale" in address) {
+		address.locale = address.locale.replace("-", "_");
+	}  
+	RNInLocoEngage.setUserAddress(address);
+}
+
+const clearUserAddress = (address) => {
+	RNInLocoEngage.clearUserAddress();
+}
+
 export default {
 	init: init,
 	setUser: setUser,
@@ -103,5 +117,7 @@ export default {
 	onNotificationPresented: onNotificationPresented,
 	onNotificationClicked: onNotificationClicked,
 	onAppLaunchedWithNotification: onAppLaunchedWithNotification,
-	getUrl: getUrl
+	getUrl: getUrl,
+	setUserAddress: setUserAddress,
+	clearUserAddress: clearUserAddress
 };

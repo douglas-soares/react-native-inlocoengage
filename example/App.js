@@ -163,6 +163,27 @@ export default class App extends Component<Props> {
     })
   }
 
+  setUserAddress() {
+    InLocoEngage.setUserAddress({
+      "locale": "pt-BR",
+      "countryName": "Brasil",
+      "countryCode": "BR",
+      "adminArea": "Pernambuco",
+      "subAdminArea": "Recife",
+      "locality": "Recife",
+      "subLocality": "Pina",
+      "thoroughfare": "Av. Engenheiro Antônio de Goes",
+      "subThoroughfare": 300,
+      "postalCode": "51110-100",
+      "latitude": -8.088109,
+      "longitude": -34.883838
+    });
+  }
+
+  clearUserAddress() {
+    InLocoEngage.clearUserAddress();
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -180,6 +201,12 @@ export default class App extends Component<Props> {
         </View>
         <View style={styles.buttonContainer}>
           <Button color="#80BA40" title="Register custom event" onPress={() => this.registerCustomEvent()}></Button>
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button color="#80BA40" title="Set user address" onPress={() => this.setUserAddress()}></Button>
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button color="#80BA40" title="Clear user address" onPress={() => this.clearUserAddress()}></Button>
         </View>
       </View>
     );

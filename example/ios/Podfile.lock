@@ -32,12 +32,12 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
-  - InLocoEngage-iOS-SDK (4.3.0):
-    - InLocoEngage-iOS-SDK/Engage (= 4.3.0)
-  - InLocoEngage-iOS-SDK/Engage (4.3.0):
-    - InLocoMedia-iOS-SDK/Location (= 4.3.0)
-  - InLocoMedia-iOS-SDK/Core (4.3.0)
-  - InLocoMedia-iOS-SDK/Location (4.3.0):
+  - InLocoEngage-iOS-SDK (4.4.1):
+    - InLocoEngage-iOS-SDK/Engage (= 4.4.1)
+  - InLocoEngage-iOS-SDK/Engage (4.4.1):
+    - InLocoMedia-iOS-SDK/Location (= 4.4.1)
+  - InLocoMedia-iOS-SDK/Core (4.4.1)
+  - InLocoMedia-iOS-SDK/Location (4.4.1):
     - InLocoMedia-iOS-SDK/Core
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
@@ -89,8 +89,8 @@ DEPENDENCIES:
   - Firebase/Messaging (~> 4.11.0)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - InLocoEngage-iOS-SDK (~> 4.3.0)
-  - InLocoMedia-iOS-SDK/Location (~> 4.3.0)
+  - InLocoEngage-iOS-SDK (~> 4.4.0)
+  - InLocoMedia-iOS-SDK/Location (~> 4.4.0)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -140,14 +140,14 @@ SPEC CHECKSUMS:
   Folly: c89ac2d5c6ab169cd7397ef27485c44f35f742c7
   glog: b3b0330915eccea41c5cc9731a77cf564a9be5ea
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
-  InLocoEngage-iOS-SDK: 8a8c61879e46f45a80029e1217c0fd9f408ba3e7
-  InLocoMedia-iOS-SDK: baba06735460b6f6acd7e160ce8475b67bca24ed
+  InLocoEngage-iOS-SDK: 9f77152f6e8f36652762d40323f1d7baeb60aa62
+  InLocoMedia-iOS-SDK: 134e463ee7252b1b2702600535b7e773a4951d08
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
   ReactNativePermissions: 9f2d9c45c98800795e6c2ed330e25d11a66a8169
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 8d4bcfb07588ab69d99345572b5a843d257d0f9b
+PODFILE CHECKSUM: 5f82cc56f0cc84385851c96dcb7b1f3651984755
 
 COCOAPODS: 1.5.3

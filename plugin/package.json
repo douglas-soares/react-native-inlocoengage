@@ -1,6 +1,6 @@
 {
   "name": "react-native-inlocoengage",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "InLocoEngage module for React Native",
   "main": "index.js",
   "scripts": {

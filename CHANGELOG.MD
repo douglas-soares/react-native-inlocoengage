@@ -1,3 +1,9 @@
+Release 3.2.0
+===
+- Expose functions to set and clear the user address
+- Update In Loco SDK to version 4.5.3 on Android
+- Update In Loco SDK to version 4.4.x on iOS
+
 Release 3.0.1
 ===
 - Change package name
